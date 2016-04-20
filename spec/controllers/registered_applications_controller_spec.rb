@@ -2,9 +2,14 @@ require 'rails_helper'
 
 RSpec.describe RegisteredApplicationsController, type: :controller do
 
+  before(:each) do
+    @user = FactoryGirl.create(:user)
+    sign_in @user
+  end
+
   describe "GET #index" do
     it "returns http success" do
-      get :index
+      get :index 
       expect(response).to have_http_status(:success)
     end
   end
@@ -16,21 +21,21 @@ RSpec.describe RegisteredApplicationsController, type: :controller do
     end
   end
 
-  describe "GET #new" do
+  describe "POST #new" do
     it "returns http success" do
       get :new
       expect(response).to have_http_status(:success)
     end
   end
 
-  describe "GET #create" do
+  describe "POST #create" do
     it "returns http success" do
       get :create
       expect(response).to have_http_status(:success)
     end
   end
 
-  describe "GET #destroy" do
+  describe "DELETE #destroy" do
     it "returns http success" do
       get :destroy
       expect(response).to have_http_status(:success)

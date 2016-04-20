@@ -5,6 +5,10 @@
         1,
         null
       ],
+      "/Users/hannahsarson/bloc/code/blocmetrics/app/helpers/registered_applications_helper.rb": [
+        1,
+        null
+      ],
       "/Users/hannahsarson/bloc/code/blocmetrics/app/helpers/users_helper.rb": [
         1,
         null
@@ -12,103 +16,8 @@
       "/Users/hannahsarson/bloc/code/blocmetrics/app/helpers/welcome_helper.rb": [
         1,
         null
-      ],
-      "/Users/hannahsarson/bloc/code/blocmetrics/app/controllers/users_controller.rb": [
-        1,
-        null
-      ],
-      "/Users/hannahsarson/bloc/code/blocmetrics/app/controllers/application_controller.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/hannahsarson/bloc/code/blocmetrics/spec/controllers/welcome_controller_spec.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        0,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        0,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/hannahsarson/bloc/code/blocmetrics/app/controllers/welcome_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/Users/hannahsarson/bloc/code/blocmetrics/spec/helpers/users_helper_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/Users/hannahsarson/bloc/code/blocmetrics/spec/helpers/welcome_helper_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/Users/hannahsarson/bloc/code/blocmetrics/spec/models/user_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/Users/hannahsarson/bloc/code/blocmetrics/spec/views/welcome/about.html.erb_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/Users/hannahsarson/bloc/code/blocmetrics/spec/views/welcome/index.html.erb_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null
       ]
     },
-    "timestamp": 1459986582
+    "timestamp": 1461096189
   }
 }
