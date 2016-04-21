@@ -10,6 +10,7 @@ class RegisteredApplicationsController < ApplicationController
   end
 
   def new
+    @user = current_user
     @registered_applications = RegisteredApplication.new
   end
 
