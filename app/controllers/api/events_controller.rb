@@ -17,11 +17,12 @@ class API::EventsController < ApplicationController
    end
 
    def create
-     registered_application = RegisteredApplication.find_by(url: request.env['HTTP_ORIGIN'])
+     registered_applications = RegisteredApplication.find_by(url: request.env['HTTP_ORIGIN'])
 
-     if registered_application.valid?
-       registered_application.save!
-       render json: registered_application.to_json, status: 201
+     binding.pry
+     if registered_applications.valid?
+        registered_applications.save!
+        render json: registered_applications.to_json, status: 201
      else
        render json: {error: "App is invalid", status: 400}, status: 400
      end
