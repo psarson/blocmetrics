@@ -1,5 +1,19 @@
 <div class="col-md-4">
   <h1> <%= @registered_applications.name %> </h1>
-  <h2> <%= @registered_applications.events.count %>
 </div>
-  <%= link_to "Delete App?", @registered_applications, method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure you want to delete this topic?' } %>
+
+  <div class="row">
+    <div class="col-xs-6">
+      <h3> Graph A </h3>
+      <%= pie_chart @registered_applications.events.group(:name).count %>
+   </div>
+ </div>
+
+ <div class="row">
+   <div class="col-xs-6">
+     <h3> Graph B </h3>
+      <%= line_chart @registered_applications.events.group_by_day(:created_at).count %>
+   </div>
+</div>
+
+<%= link_to "Delete App?", destroy_user_session_path,	method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure you want to delete this topic?' } %>

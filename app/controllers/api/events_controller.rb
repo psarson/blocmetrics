@@ -18,13 +18,17 @@ class API::EventsController < ApplicationController
 
    def create
      registered_applications = RegisteredApplication.find_by(url: request.env['HTTP_ORIGIN'])
-
-     binding.pry
-     if registered_applications.valid?
-        registered_applications.save!
-        render json: registered_applications.to_json, status: 201
+     if registered_applications.nil?
+       render json: {error: "App has not been registered", status: :unprocessable_entity}
      else
-       render json: {error: "App is invalid", status: 400}, status: 400
+       @event = registered_applications.events.new(event_params)
+
+       if @event.valid?
+          @event.save!
+          render json: @event.to_json, status: 201
+       else
+         render json: {error: "App is invalid", status: 400}, status: 400
+       end
      end
    end
 
